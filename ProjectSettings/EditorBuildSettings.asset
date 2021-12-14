@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b07fdd1cc3b69884cbbb53ee4c4b2a32
+  - enabled: 1
+    path: Assets/Scenes/(Level1)Addition_And_Subtraction.unity
+    guid: 56ebe71e3a454244db54cf8e1098e9ae
+  - enabled: 1
+    path: Assets/Scenes/(Level2)Multiplication.unity
+    guid: c675eaa61a6266f458e377e086bc7c0e
+  - enabled: 1
+    path: Assets/Scenes/(Lel3)AdditionAndSubtractionOfFractions.unity
+    guid: ad2ce5c96566c98469245c102faeca45
+  - enabled: 1
+    path: Assets/Scenes/(Level4)MultiplicationAndDivisionOfFractions.unity
+    guid: f33b3b0c46e36f04ea840932c7b56895
+  - enabled: 1
+    path: Assets/Scenes/(Level5)ConvertingFractionsToDecimal.unity
+    guid: 99b8c1f73e0933f41a6df9baed1debc0
+  - enabled: 1
+    path: Assets/Scenes/(Level6)ErectionAndExtractionOfSquares.unity
+    guid: ff9dba273e922c44792d2d2c35e7ebe2
+  - enabled: 1
+    path: Assets/Scenes/(Level6)ErectionAndExtractionOfSquaresHard.unity
+    guid: 94a387110f32c604f85633620770b231
+  m_configObjects: {}

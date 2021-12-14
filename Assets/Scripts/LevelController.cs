@@ -8,7 +8,8 @@ public enum QuestionsType
     additionAndSubtraction,
     multiplication,
     erectionAndExtractionOfSquaresEasy,
-    erectionAndExtractionOfSquaresHard
+    erectionAndExtractionOfSquaresHard,
+    decimalConvertion
 }
 public class LevelController : MonoBehaviour
 {
@@ -67,6 +68,8 @@ public class LevelController : MonoBehaviour
                 return QuestionsGenerator.Generate_ErectionAndExtractionOfSquaresEasy();
             case QuestionsType.erectionAndExtractionOfSquaresHard:
                 return QuestionsGenerator.Generate_ErectionAndExtractionOfSquaresHard();
+            case QuestionsType.decimalConvertion:
+                return QuestionsGenerator.Generate_DecimalConvertion();
         }
 
         return null;

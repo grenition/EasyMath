@@ -351,48 +351,31 @@ public class QuestionsGenerator
         QuestionKit kit = new QuestionKit(question, answers.ToArray());
         return kit;
     }
-    public static string GetDegreeSymbol(int value)
+
+    public static QuestionKit Generate_DecimalConvertion()
     {
-        string valueOut = string.Empty;
-        switch (value)
+        int value = Random.Range(1, 100);
+        int parametr = Random.Range(-6, 6);
+        float a = (float)value / (float)(Mathf.Pow(10, parametr));
+        string question = $"{a} * 10" + '\u1D61' + $" = {value}";
+
+        List<string> _answers = new List<string>();
+        for (int i = 0; i < 4; i++)
         {
-            case 0:
-                valueOut = "⁰";
-                break;
-            case 1:
-                valueOut = "¹";
-                break;
-            case 2:
-                valueOut = "²";
-                break;
-            case 3:
-                valueOut = "³";
-                break;
-            case 4:
-                valueOut = "⁴";
-                break;
-            case 5:
-                valueOut = "⁵";
-                break;
-            case 6:
-                valueOut = "⁶";
-                break;
-            case 7:
-                valueOut = "⁷";
-                break;
-            case 8:
-                valueOut = "⁸";
-                break;
-            case 9:
-                valueOut = "⁹";
-                break;
-            case 10:
-                valueOut = "⁻";
-                break;
-            case 11:
-                valueOut = "√";
-                break;
+            if (i == 0)
+                _answers.Add(parametr.ToString());
+            else
+            {
+                int rnd = 0;
+                for (; ; )
+                {
+                    rnd = parametr + Random.Range(-4, 4);
+                    if (rnd != value)
+                        break;
+                }
+                _answers.Add(rnd.ToString());
+            }
         }
-        return valueOut;
+        return new QuestionKit(question, _answers.ToArray());
     }
 }
